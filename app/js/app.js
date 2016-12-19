@@ -8,5 +8,5 @@ $(function() {
 			keywords: 'JavaScript Programming' }
 	];
 
-	new app.LibraryView(products);
+	//new app.LibraryView(products);
 });
