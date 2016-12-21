@@ -1,0 +1,17 @@
+{
+  "name"         : "backboneshop",
+  "version"      : "1.0.0",
+  "description"  : "",
+  "main"         : "server.js",
+  "author"       : "Nick Z",
+  "dependencies" : {
+    "express"        : "4.14.0"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-util": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "3.0.0"
+  }
+}
