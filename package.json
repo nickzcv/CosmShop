@@ -12,6 +12,6 @@
     "gulp-clean-css": "latest",
     "gulp-util": "latest",
     "gulp-rename": "latest",
-    "gulp-sass": "3.0.0"
+    "gulp-sass": "latest"
   }
 }
