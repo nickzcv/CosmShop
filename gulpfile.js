@@ -8,7 +8,8 @@ var gulp = require("gulp"),//http://gulpjs.com/
 
 gulp.task("sass", function(){
   log("Generate CSS files " + (new Date()).toString());
-  gulp.src('app/scss/*.scss')
+  gulp.src('app/scss/main.scss')
+  .pipe(sass({ includePaths : ['_/partials/'] }))
   .pipe(sass({ style: 'expanded' }))
   .pipe(gulp.dest("app/css"))
   .pipe(rename({suffix: '.min'}))
@@ -18,5 +19,5 @@ gulp.task("sass", function(){
 
 gulp.task("watch", function(){
   log("Watching scss files for modifications");
-  gulp.watch('app/scss/*.scss', ["sass"]);
+  gulp.watch('app/scss/partials/*.scss', ["sass"]);
 });
