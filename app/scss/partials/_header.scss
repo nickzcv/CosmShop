@@ -1,0 +1,20 @@
+/* Header styles
+-------------------------------------------------- */
+header {
+
+  .logo {
+    height: 70px;
+    background: #777;
+    color: #fff;
+  }
+
+  .hamburger {
+    font-size: 20px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+}
