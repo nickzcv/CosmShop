@@ -2,21 +2,21 @@
 -------------------------------------------------- */
 header {
   .logo {
-    height: 70px;
+    height: 65px;
     background: #777;
     color: #fff;
     text-align: center;
   }
   .hamburger {
-    font-size: 20px;
+    font-size: 26px;
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 20px;
     color: #fff;
     cursor: pointer;
+
     &.closeBtn span:before {
-      content: "\e014";
+      content: "\f2d7";
     }
   }
-
 }

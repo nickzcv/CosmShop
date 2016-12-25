@@ -25,21 +25,21 @@ footer {
 /* Header styles
 -------------------------------------------------- */
 header .logo {
-  height: 70px;
+  height: 65px;
   background: #777;
   color: #fff;
   text-align: center; }
 
 header .hamburger {
-  font-size: 20px;
+  font-size: 26px;
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
   color: #fff;
   cursor: pointer; }
 
 header .hamburger.closeBtn span:before {
-  content: "\e014"; }
+  content: "\f2d7"; }
 
 /* Navigation styles
 -------------------------------------------------- */
@@ -57,8 +57,9 @@ nav.navigation ul.sub-nav {
   margin-left: 20px; }
 
 nav.navigation ul li {
-  text-transform: uppercase;
-  line-height: 2.5rem; }
+  line-height: 2.5rem;
+  letter-spacing: .5px;
+  font-size: 1.5em; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   nav.navigation {
@@ -80,3 +81,9 @@ nav.navigation ul li {
     position: absolute; }
   nav.navigation ul li {
     display: inline-block; } }
+
+/* icons
+  'partials/_ionicons-variables',
+  'partials/_ionicons-font',
+  'partials/_ionicons-icons';
+*/
