@@ -5,10 +5,12 @@ nav.navigation {
   ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    text-align: right;
+    margin: 0 20px 0 0;
 
     li {
       text-transform: uppercase;
+      line-height: 2.5rem;
     }
   }
 
@@ -19,7 +21,7 @@ nav.navigation {
 @media (min-width: 768px) {
   .navigation {
     &.hidden {
-      display: block !important;
+      display: block !important; /* must be here for hamburger menu */
     }
 
     ul {
