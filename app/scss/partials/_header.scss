@@ -1,21 +1,19 @@
 /* Header styles
 -------------------------------------------------- */
 header {
-
   .logo {
     height: 70px;
     background: #777;
     color: #fff;
+    text-align: center;
   }
-
   .hamburger {
     font-size: 20px;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 20px;
+    left: 20px;
     color: #fff;
     cursor: pointer;
-
     &.closeBtn span:before {
       content: "\e014";
     }

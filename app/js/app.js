@@ -8,4 +8,16 @@ $(function() {
     $('.navigation').toggleClass('hidden');
   });
 
+  // Generic handler sub navigation
+  // TODO: test it in real devices combination 'click mouseover'
+  // for now no hover
+  $('.sub-nav-toggle').on('click', function(e) {
+    e.preventDefault();
+    $(this).next().toggleClass('hidden');
+  });
+
+
+
+
+
 });

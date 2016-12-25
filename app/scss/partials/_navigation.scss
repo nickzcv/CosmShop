@@ -3,32 +3,53 @@
 nav.navigation {
 
   ul {
-    list-style: none;
+    margin: 0;
     padding: 0;
-    text-align: right;
-    margin: 0 20px 0 0;
-
+    text-align: left;
+    list-style: none;
+    &.sub-nav {
+      margin-left: 20px;
+    }
     li {
       text-transform: uppercase;
       line-height: 2.5rem;
     }
   }
 
+  /* Tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-}
-
-
-@media (min-width: 768px) {
-  .navigation {
+    /* must be rewritten due mbf */
     &.hidden {
-      display: block !important; /* must be here for hamburger menu */
+      display: block !important;
     }
-
     ul {
-
+      &.sub-nav {
+        margin-left: 20px;
+        position: absolute;
+      }
       li {
         display: inline-block;
       }
     }
   }
+
+  /* Desktop and larger */
+  @media only screen and (min-width: 992px) {
+
+    &.hidden {
+      display: block !important; /* must be here for hamburger menu */
+    }
+    ul {
+      &.sub-nav {
+        margin-left: 20px;
+        position: absolute;
+      }
+      li {
+        display: inline-block;
+      }
+    }
+
+  }
+
 }
