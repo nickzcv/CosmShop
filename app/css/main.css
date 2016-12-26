@@ -7,6 +7,7 @@ html {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #000;
   position: relative;
+  font-size: 16px;
   min-height: 100%;
   min-width: 320px; }
 
@@ -57,29 +58,24 @@ nav.navigation ul.sub-nav {
   margin-left: 20px; }
 
 nav.navigation ul li {
-  line-height: 2.5rem;
-  letter-spacing: .5px;
-  font-size: 1.5em; }
+  font-size: 16px;
+  text-transform: uppercase; }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  nav.navigation {
-    /* must be rewritten due mbf */ }
-  nav.navigation.hidden {
-    display: block !important; }
-  nav.navigation ul.sub-nav {
-    margin-left: 20px;
-    position: absolute; }
-  nav.navigation ul li {
-    display: inline-block; } }
-
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   nav.navigation.hidden {
     display: block !important;
     /* must be here for hamburger menu */ }
   nav.navigation ul.sub-nav {
-    margin-left: 20px;
-    position: absolute; }
+    position: absolute;
+    width: 160px;
+    margin: 0;
+    background: #000;
+    color: #fff; }
+  nav.navigation ul.sub-nav li {
+    text-transform: none;
+    font-weight: 400; }
   nav.navigation ul li {
+    font-weight: 600;
     display: inline-block; } }
 
 /* icons

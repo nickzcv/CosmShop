@@ -1,7 +1,6 @@
 /* Navigation styles
 -------------------------------------------------- */
 nav.navigation {
-
   ul {
     margin: 0;
     padding: 0;
@@ -11,26 +10,30 @@ nav.navigation {
       margin-left: 20px;
     }
     li {
-
-      line-height: 2.5rem;
-      letter-spacing: .5px;
-      font-size: 1.5em;
+      font-size: 16px;
+      text-transform: uppercase;
     }
   }
 
   /* Tablets */
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-
-    /* must be rewritten due mbf */
+  @media only screen and (min-width: 768px) {
     &.hidden {
-      display: block !important;
+      display: block !important; /* must be here for hamburger menu */
     }
     ul {
       &.sub-nav {
-        margin-left: 20px;
         position: absolute;
+        width: 160px;
+        margin: 0;
+        background: #000;
+        color: #fff;
+        li {
+          text-transform: none;
+          font-weight: 400;
+        }
       }
       li {
+        font-weight: 600;
         display: inline-block;
       }
     }
@@ -38,19 +41,6 @@ nav.navigation {
 
   /* Desktop and larger */
   @media only screen and (min-width: 992px) {
-
-    &.hidden {
-      display: block !important; /* must be here for hamburger menu */
-    }
-    ul {
-      &.sub-nav {
-        margin-left: 20px;
-        position: absolute;
-      }
-      li {
-        display: inline-block;
-      }
-    }
 
   }
 
