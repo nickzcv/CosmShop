@@ -17,6 +17,18 @@ $(function() {
   });
 
 
+  $(document).on('click', function(event) {
+    if (!$(event.target).closest('.sub-nav').length) {
+      // Hide sub-menu.
+      console.log('hide it');
+      //if ($('.sub-nav').hasClass('hidden')) {
+      //  console.log('test')
+      //} else {
+       // $('.sub-nav').removeClass('hidden');
+      //}
+    }
+  });
+
 
 
 
