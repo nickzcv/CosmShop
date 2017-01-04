@@ -1,0 +1,46 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 713.18 433">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f26671;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-4 {
+        font-size: 137.84px;
+        fill: #fff;
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0.01em;
+      }
+    </style>
+  </defs>
+  <title>logo</title>
+  <rect class="cls-1" width="713.18" height="433"/>
+  <g>
+    <path class="cls-2" d="M147.14,174S99,188.17,134.41,223.54"/>
+    <path class="cls-2" d="M126.36,296.73s-5.87-25.89-3.95-44a51.53,51.53,0,0,1,7.94-23.16c9.66-14.55,25.11-26.1,57.2-26.1"/>
+    <path class="cls-2" d="M171.2,294.29s-7.64-42.94,26.38-43.29c30.18-.3,23.13,43.29,23.13,43.29"/>
+    <path class="cls-3" d="M189.59,136.51v64.8A32,32,0,0,0,209.42,231c8.22,3.31,19.5,5.87,34.72,5.87a106.42,106.42,0,0,0,23.55-2.42,40,40,0,0,0,31-39.15V135.18a.24.24,0,0,0-.43-.14l-20.56,27.41a12.65,12.65,0,0,1-10.12,5.06H220a13.89,13.89,0,0,1-11.37-5.92l-17.83-25.45A.65.65,0,0,0,189.59,136.51Z"/>
+  </g>
+  <path class="cls-2" d="M264.76,235.09s3.33,7.6,3.33,20.82v38.38"/>
+  <text class="cls-4" transform="translate(342.85 244.21)">c<tspan class="cls-5" x="61.75" y="0">a</tspan><tspan x="127.64" y="0">t</tspan><tspan class="cls-6" x="173.26" y="0">t</tspan><tspan x="220.12" y="0">y</tspan></text>
+  <path class="cls-2" d="M222.25,299.33"/>
+  <path class="cls-2" d="M170.25,299"/>
+</svg>
