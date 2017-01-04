@@ -33,13 +33,16 @@ header {
   /* Desktop and larger */ }
 
 header .logo {
-  padding: 0; }
+  padding: 0;
+  text-align: center;
+  background: #F26671; }
 
 header .logo a {
-  display: block;
+  display: inline-block;
   height: 70px;
+  width: 115px;
   text-indent: -9999px;
-  background: #F26671 url(../svg/logo.svg) no-repeat;
+  background: url(../svg/logo.svg) no-repeat;
   background-size: contain;
   background-position: center; }
 
@@ -91,6 +94,10 @@ nav.navigation ul li {
   font-size: 16px;
   text-transform: uppercase; }
 
+nav.navigation ul li a {
+  color: #000;
+  font-weight: bold; }
+
 @media only screen and (min-width: 768px) {
   nav.navigation.hidden {
     display: block !important;
@@ -109,7 +116,7 @@ nav.navigation ul li {
     display: inline-block; } }
 
 /* icons
-  'partials/_ionicons-variables',
-  'partials/_ionicons-font',
-  'partials/_ionicons-icons';
+  'partials/icons/_ionicons-variables',
+  'partials/icons/_ionicons-font',
+  'partials/icons/_ionicons-icons';
 */
