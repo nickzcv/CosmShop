@@ -19,6 +19,13 @@ nav.navigation {
       a {
         color: #555;
         font-weight: bold;
+        text-decoration: none;
+        &:hover {
+          color: #000;
+        }
+        &.active {
+          border-bottom: 3px solid #F26671;
+        }
       }
     }
   }
@@ -49,6 +56,10 @@ nav.navigation {
           margin: 0.2rem 1rem;
           text-transform: none;
           font-weight: 400;
+          a {
+            color: #fff;
+            font-weight: normal;
+          }
         }
       }
       li {
