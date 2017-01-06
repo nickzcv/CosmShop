@@ -17,7 +17,7 @@ $(function() {
   });
 
   // Close sub nav if get click outside
-  $(document).on('click', function(event) {
+  $(document).on('click touch', function(event) {
     if ($('.sub-nav').is(":visible") && !$(event.target).closest('.sub-nav').length && !$(event.target).hasClass('sub-nav-trigger') ) {
       // Hide sub navigation.
       $('.sub-nav').toggleClass('hidden');
