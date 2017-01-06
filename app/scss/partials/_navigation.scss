@@ -8,12 +8,16 @@ nav.navigation {
     list-style: none;
     &.sub-nav {
       margin-left: 20px;
+      li {
+        text-transform: none;
+      }
     }
     li {
+      margin: 5px 0;
       font-size: 16px;
       text-transform: uppercase;
       a {
-        color: #000;
+        color: #555;
         font-weight: bold;
       }
     }
@@ -28,23 +32,42 @@ nav.navigation {
       &.sub-nav {
         position: absolute;
         width: 160px;
-        margin: 0;
-        background: #000;
+        margin: 10px 0 0 0;
+        padding: 10px 0;
+        background: #F26671;
         color: #fff;
+        &:before {
+          content: '';
+          position: absolute;
+          top: -10px;
+          width: 0;
+          height: 0;
+          border-bottom: 10px solid #555;
+          border-left: 10px solid transparent;
+        }
         li {
+          margin: 0.2rem 1rem;
           text-transform: none;
           font-weight: 400;
         }
       }
       li {
+        margin: 0 1rem 0 0;
         font-weight: 600;
         display: inline-block;
       }
     }
+
   }
 
   /* Desktop and larger */
   @media only screen and (min-width: 992px) {
+    ul {
+      margin: 2rem 0 0 0;
+      li {
+        margin: 0 1rem;
+      }
+    }
 
   }
 
