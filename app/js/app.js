@@ -8,23 +8,28 @@ $(function() {
     $('.navigation').toggleClass('hidden');
   });
 
-  // Generic handler sub navigation
-  // TODO: test it in real devices combination 'click mouseover'
-  // for now no hover
-  $('.sub-nav-trigger').on('click', function(e) {
-    e.preventDefault();
-    $(this).next().toggleClass('hidden');
-  });
-
-  // Close sub nav if get click outside
-  $(document).on('click touch', function(event) {
-    if ($('.sub-nav').is(":visible") && !$(event.target).closest('.sub-nav').length && !$(event.target).hasClass('sub-nav-trigger') ) {
-      // Hide sub navigation.
-      $('.sub-nav').toggleClass('hidden');
+  // Drop-down navigation handler
+  var timer;
+  $('.sub-nav-trigger').on({
+    mouseenter: function(){
+      var self = this;
+      clearTimeout(timer);
+      timer = setTimeout(function(){
+        $(self).next().fadeIn();
+      }, 100)
+    },
+    mouseleave: function(){
+      var self = this;
+      setTimeout(function(){
+        if (!$(self).next().is(":hover")){
+          $(self).next().fadeOut();
+        }
+      }, 100);
     }
   });
 
-
-
+  $('.sub-nav').on('mouseleave', function() {
+    $(this).fadeOut();
+  });
 
 });

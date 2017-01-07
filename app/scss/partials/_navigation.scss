@@ -7,6 +7,7 @@ nav.navigation {
     text-align: left;
     list-style: none;
     &.sub-nav {
+      display: none;
       margin-left: 20px;
       li {
         text-transform: none;
@@ -39,7 +40,7 @@ nav.navigation {
       &.sub-nav {
         position: absolute;
         width: 160px;
-        margin: 10px 0 0 0;
+        margin: 20px 0 0 0;
         padding: 10px 0;
         background: #F26671;
         color: #fff;
@@ -63,9 +64,12 @@ nav.navigation {
         }
       }
       li {
-        margin: 0 1rem 0 0;
         font-weight: 600;
+        margin: 10px;
         display: inline-block;
+        a {
+          padding: 7px 0;
+        }
       }
     }
 
@@ -74,10 +78,7 @@ nav.navigation {
   /* Desktop and larger */
   @media only screen and (min-width: 992px) {
     ul {
-      margin: 2rem 0 0 0;
-      li {
-        margin: 0 1rem;
-      }
+      margin: 1.5rem 0 0 0;
     }
 
   }

@@ -6,7 +6,7 @@ header {
     text-align: center;
     background: #F26671;
 
-    a{
+    a {
       display: inline-block;
       height: 70px;
       width: 115px;
@@ -31,7 +31,7 @@ header {
 
   /* Tablets */
   @media only screen and (min-width: 768px) {
-    .logo a{
+    .logo a {
       display: block;
       text-indent: -9999px;
       height: 70px;
