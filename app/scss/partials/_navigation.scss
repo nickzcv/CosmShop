@@ -25,7 +25,7 @@ nav.navigation {
           color: #000;
         }
         &.active {
-          border-bottom: 3px solid #F26671;
+          border-bottom: 3px solid $main-color;
         }
       }
     }
@@ -39,10 +39,10 @@ nav.navigation {
     ul {
       &.sub-nav {
         position: absolute;
-        width: 160px;
+        width: 150px;
         margin: 20px 0 0 0;
         padding: 10px 0;
-        background: #F26671;
+        background: $main-color;
         color: #fff;
         &:before {
           content: '';
@@ -50,8 +50,9 @@ nav.navigation {
           top: -10px;
           width: 0;
           height: 0;
-          border-bottom: 10px solid #555;
+          border-bottom: 10px solid $main-color;
           border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
         }
         li {
           margin: 0.2rem 1rem;
@@ -65,7 +66,7 @@ nav.navigation {
       }
       li {
         font-weight: 600;
-        margin: 10px;
+        margin: 10px 10px 7px;
         display: inline-block;
         a {
           padding: 7px 0;
@@ -79,6 +80,9 @@ nav.navigation {
   @media only screen and (min-width: 992px) {
     ul {
       margin: 1.5rem 0 0 0;
+      li {
+        margin: 10px;
+      }
     }
 
   }

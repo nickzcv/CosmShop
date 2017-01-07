@@ -24,7 +24,7 @@ $(function() {
         if (!$(self).next().is(":hover")){
           $(self).next().fadeOut();
         }
-      }, 100);
+      }, 300);
     }
   });
 

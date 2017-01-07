@@ -4,7 +4,7 @@ header {
   .logo {
     padding: 0;
     text-align: center;
-    background: #F26671;
+    background: $main-color;
 
     a {
       display: inline-block;
@@ -27,6 +27,15 @@ header {
     &.closeBtn span:before {
       content: "\f2d7";
     }
+  }
+  // Basket
+  .basket {
+    font-size: 26px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
   }
 
   /* Tablets */

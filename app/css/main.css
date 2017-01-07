@@ -3,6 +3,8 @@
 *  http://zaicev.by/
 *
 */
+/* Base styles
+-------------------------------------------------- */
 html {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #000;
@@ -59,6 +61,14 @@ header .hamburger {
 
 header .hamburger.closeBtn span:before {
   content: "\f2d7"; }
+
+header .basket {
+  font-size: 26px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #fff;
+  cursor: pointer; }
 
 @media only screen and (min-width: 768px) {
   header .logo a {
@@ -120,7 +130,7 @@ nav.navigation ul li a.active {
     /* must be here for hamburger menu */ }
   nav.navigation ul.sub-nav {
     position: absolute;
-    width: 160px;
+    width: 150px;
     margin: 20px 0 0 0;
     padding: 10px 0;
     background: #F26671;
@@ -131,8 +141,9 @@ nav.navigation ul li a.active {
     top: -10px;
     width: 0;
     height: 0;
-    border-bottom: 10px solid #555;
-    border-left: 10px solid transparent; }
+    border-bottom: 10px solid #F26671;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; }
   nav.navigation ul.sub-nav li {
     margin: 0.2rem 1rem;
     text-transform: none;
@@ -142,14 +153,16 @@ nav.navigation ul li a.active {
     font-weight: normal; }
   nav.navigation ul li {
     font-weight: 600;
-    margin: 10px;
+    margin: 10px 10px 7px;
     display: inline-block; }
   nav.navigation ul li a {
     padding: 7px 0; } }
 
 @media only screen and (min-width: 992px) {
   nav.navigation ul {
-    margin: 1.5rem 0 0 0; } }
+    margin: 1.5rem 0 0 0; }
+  nav.navigation ul li {
+    margin: 10px; } }
 
 /* icons
   'partials/icons/_ionicons-variables',
