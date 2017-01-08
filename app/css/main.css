@@ -62,7 +62,7 @@ header .hamburger {
 header .hamburger.closeBtn span:before {
   content: "\f2d7"; }
 
-header .basket {
+header .cart {
   font-size: 26px;
   position: absolute;
   top: 15px;
@@ -77,7 +77,11 @@ header .basket {
     height: 70px;
     background: url(../svg/logo.svg) no-repeat;
     background-size: contain;
-    background-position: center; } }
+    background-position: center; }
+  header .cart {
+    font-size: 26px;
+    top: 15px;
+    right: 13%; } }
 
 @media only screen and (min-width: 992px) {
   header .logo a {
@@ -87,7 +91,10 @@ header .basket {
     width: 220px;
     background: url(../svg/logo.svg);
     background-size: cover;
-    background-position: center; } }
+    background-position: center; }
+  header .cart {
+    font-size: 32px;
+    color: #000; } }
 
 /* Navigation styles
 -------------------------------------------------- */
@@ -163,6 +170,12 @@ nav.navigation ul li a.active {
     margin: 1.5rem 0 0 0; }
   nav.navigation ul li {
     margin: 10px; } }
+
+/* Banner styles
+-------------------------------------------------- */
+.banner {
+  height: 250px;
+  background: #d4d4d4; }
 
 /* icons
   'partials/icons/_ionicons-variables',

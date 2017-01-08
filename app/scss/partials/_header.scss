@@ -28,8 +28,7 @@ header {
       content: "\f2d7";
     }
   }
-  // Basket
-  .basket {
+  .cart {
     font-size: 26px;
     position: absolute;
     top: 15px;
@@ -37,6 +36,7 @@ header {
     color: #fff;
     cursor: pointer;
   }
+
 
   /* Tablets */
   @media only screen and (min-width: 768px) {
@@ -48,7 +48,13 @@ header {
       background-size: contain;
       background-position: center;
     }
+    .cart {
+      font-size: 26px;
+      top: 15px;
+      right: 13%;
+    }
   }
+
 
   /* Desktop and larger */
   @media only screen and (min-width: 992px) {
@@ -60,6 +66,10 @@ header {
       background: url(../svg/logo.svg);
       background-size: cover;
       background-position: center;
+    }
+    .cart {
+      font-size: 32px;
+      color: #000;
     }
   }
 }
