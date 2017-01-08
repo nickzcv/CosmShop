@@ -31,6 +31,11 @@ a {
 a:hover {
   text-decoration: none; }
 
+.price:after {
+  content: ' p.';
+  font-weight: 400;
+  font-size: 0.80rem; }
+
 /* Header styles
 -------------------------------------------------- */
 header {
@@ -103,6 +108,14 @@ header .cart-popup {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center; }
+  header .cart-popup > div {
+    margin-bottom: 15px; }
+  header .cart-popup > div span {
+    display: inline-block;
+    float: left; }
+  header .cart-popup > div b {
+    display: inline-block;
+    float: right; }
   header .cart-popup:after {
     content: '';
     position: absolute;
@@ -116,7 +129,7 @@ header .cart-popup {
   header .cart-popup .cart-btn {
     display: block;
     background: #F26671;
-    margin: 10px 0 0;
+    top: 10px;
     padding: 3px 5px;
     color: #fff;
     font-size: 0.70rem;
@@ -160,6 +173,9 @@ nav.navigation ul.sub-nav {
 nav.navigation ul.sub-nav li {
   text-transform: none; }
 
+nav.navigation ul.sub-nav li a:hover {
+  text-decoration: underline; }
+
 nav.navigation ul li {
   margin: 5px 0;
   font-size: 16px;
@@ -182,7 +198,6 @@ nav.navigation ul li a.active {
     /* must be here for hamburger menu */ }
   nav.navigation ul.sub-nav {
     position: absolute;
-    width: 150px;
     margin: 20px 0 0 0;
     padding: 10px 0;
     background: #F26671;
@@ -198,6 +213,7 @@ nav.navigation ul li a.active {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent; }
   nav.navigation ul.sub-nav li {
+    display: block;
     margin: 0.2rem 1rem;
     text-transform: none;
     font-weight: 400; }
