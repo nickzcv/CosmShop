@@ -18,14 +18,14 @@ nav.navigation {
       font-size: 16px;
       text-transform: uppercase;
       a {
-        color: #555;
+        color: $dark-gray;
         font-weight: bold;
         text-decoration: none;
         &:hover {
           color: #000;
         }
         &.active {
-          border-bottom: 3px solid $main-color;
+          border-bottom: 3px solid $main;
         }
       }
     }
@@ -43,7 +43,7 @@ nav.navigation {
         width: 150px;
         margin: 20px 0 0 0;
         padding: 10px 0;
-        background: $main-color;
+        background: $main;
         color: #fff;
         &:before {
           content: '';
@@ -51,7 +51,7 @@ nav.navigation {
           top: -10px;
           width: 0;
           height: 0;
-          border-bottom: 10px solid $main-color;
+          border-bottom: 10px solid $main;
           border-left: 10px solid transparent;
           border-right: 10px solid transparent;
         }

@@ -1,6 +1,9 @@
 /* Base styles
 -------------------------------------------------- */
-$main-color: #F26671;
+// Color schema
+$main: #F26671; // main color for logo bg and mobile header
+$dark-gray: #555; // main color for navigation
+
 
 html {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
