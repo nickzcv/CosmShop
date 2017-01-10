@@ -2,7 +2,15 @@
 -------------------------------------------------- */
 .banner {
   height: 250px;
-  background: #d4d4d4
+  background: #d4d4d4;
+
+  .brand {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    float: left;
+    margin: 20px;
+  }
 
 
 }

@@ -106,8 +106,9 @@ header {
         text-decoration: none;
         transition: all 0.2s ease-in;
         text-transform: uppercase;
+        border: 1px solid $main;
         &:hover {
-          opacity: 0.7;
+          border-color: #ccc;
         }
       }
     }
