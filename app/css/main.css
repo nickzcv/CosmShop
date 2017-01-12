@@ -243,11 +243,12 @@ nav.navigation ul li a.active {
   background: #d4d4d4; }
 
 .banner .brand {
-  width: 100px;
-  height: 100px;
-  background: #000;
+  width: 300px;
   float: left;
   margin: 20px; }
+
+.banner .brand img {
+  width: 100%; }
 
 /* icons
   'partials/icons/_ionicons-variables',

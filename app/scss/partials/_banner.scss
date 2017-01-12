@@ -5,11 +5,13 @@
   background: #d4d4d4;
 
   .brand {
-    width: 100px;
-    height: 100px;
-    background: #000;
+    width: 300px;
     float: left;
     margin: 20px;
+
+    img {
+      width: 100%;
+    }
   }
 
 
