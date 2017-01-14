@@ -30,7 +30,7 @@ a {
   }
 }
 .price:after {
-  content: ' p.';
+  content: ' p.'; // currency symbol
   font-weight: 400;
   font-size: 0.80rem;
 }

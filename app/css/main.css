@@ -239,10 +239,11 @@ nav.navigation ul li a.active {
 /* Banner styles
 -------------------------------------------------- */
 .banner {
-  height: 250px;
-  background: #d4d4d4; }
+  height: 100px;
+  background: #ffffdb; }
 
 .banner .brand {
+  display: none;
   width: 300px;
   float: left;
   margin: 20px; }
@@ -250,6 +251,8 @@ nav.navigation ul li a.active {
 .banner .brand img {
   width: 100%; }
 
+/* Banner styles
+-------------------------------------------------- */
 /* icons
   'partials/icons/_ionicons-variables',
   'partials/icons/_ionicons-font',
