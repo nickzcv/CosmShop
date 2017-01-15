@@ -1,17 +1,33 @@
 /* Banner styles
 -------------------------------------------------- */
 .banner {
-  height: 100px;
-  background: #ffffdb;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid gray ;
+  height: 250px;
 
-  .brand {
-    display: none;
-    width: 300px;
+  .cats {
+    position: absolute;
+    right: 0;
+    height: 250px;
+  }
+
+  .brands {
     float: left;
-    margin: 20px;
+    max-width: 600px;
 
-    img {
-      width: 100%;
+    .oriflame {
+
+    }
+    .marykay {
+
+    }
+    .avon {
+
+    }
+    .faberlic {
+
     }
   }
 
