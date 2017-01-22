@@ -57,5 +57,14 @@ $(function() {
     $(this).fadeOut();
   });
 
+  // ----
+  // Shop
+  $('.mobile-arrow').on('click', function() {
+    console.log($(this).parent());
+    $(this).parent().css('width','auto');
+
+  });
+
+
 
 });
