@@ -63,7 +63,12 @@ $(function() {
   // Shop
   // -----
   $('.mobile-arrow').on('click', function() {
-    $(this).parent().addClass('opened');
+    var parentNode = $(this).parent();
+    if (parentNode.hasClass('opened')) {
+      parentNode.removeClass('opened');
+    } else {
+      parentNode.addClass('opened');
+    }
   });
   // Hide the menus.
   $(document).on('click', function(event) {

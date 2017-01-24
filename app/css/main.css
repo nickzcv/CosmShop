@@ -275,6 +275,10 @@ nav.navigation ul li a.active {
 .shop ul.categories.opened {
   width: auto; }
 
+.shop ul.categories.opened span:before {
+  vertical-align: middle;
+  transform: scaleX(-1); }
+
 .shop ul.categories .mobile-arrow {
   line-height: 40px;
   background: #F26671; }

@@ -18,6 +18,10 @@
     overflow: hidden;
     &.opened {
       width: auto;
+      span:before {
+        vertical-align: middle;
+        transform: scaleX(-1);
+      }
     }
     .mobile-arrow {
       line-height: 40px;
