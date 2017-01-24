@@ -1,7 +1,9 @@
 var app = app || {};
 
 $(function() {
-
+  // -----
+  // Base
+  // -----
   // Mobile navigation handler (hamburger)
   $('.hamburger').on('click', function() {
     // hide cart if opened
@@ -57,12 +59,17 @@ $(function() {
     $(this).fadeOut();
   });
 
-  // ----
+  // -----
   // Shop
+  // -----
   $('.mobile-arrow').on('click', function() {
-    console.log($(this).parent());
-    $(this).parent().css('width','auto');
-
+    $(this).parent().addClass('opened');
+  });
+  // Hide the menus.
+  $(document).on('click', function(event) {
+    if (!$(event.target).closest('.categories').length) {
+      $('.categories').removeClass('opened');
+    }
   });
 
 

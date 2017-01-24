@@ -276,26 +276,49 @@ nav.navigation ul li a.active {
   width: auto; }
 
 .shop ul.categories .mobile-arrow {
+  line-height: 40px;
   background: #F26671; }
 
 .shop ul.categories .mobile-arrow span {
   font-size: 25px; }
 
+.shop ul.categories .mobile-arrow span:before {
+  vertical-align: middle; }
+
 .shop ul.categories li {
   font-size: 16px;
-  padding: 5px 12px;
+  padding: 0 12px;
+  line-height: 35px;
   color: #fff; }
 
 .shop ul.categories li span {
   font-size: 20px;
   padding-right: 7px; }
 
+.shop ul.categories li span:before {
+  vertical-align: middle; }
+
 .shop .filters {
-  background: #eee;
+  background: #f5f5f5;
   margin-left: 50px; }
 
 .shop .content {
   margin-left: 50px; }
+
+@media only screen and (min-width: 992px) {
+  .shop ul.categories {
+    position: relative;
+    width: auto;
+    background: none; }
+  .shop ul.categories .mobile-arrow {
+    background: none; }
+  .shop ul.categories .mobile-arrow span {
+    display: none; }
+  .shop ul.categories li {
+    padding: 0;
+    color: #000; }
+  .shop .filters {
+    margin-left: 0; } }
 
 /* icons
   'partials/icons/_ionicons-variables',
