@@ -258,7 +258,7 @@ nav.navigation ul li a.active {
 
 /* Banner styles
 -------------------------------------------------- */
-.shop section {
+.shop div.section {
   padding: 0; }
 
 .shop ul.categories {
