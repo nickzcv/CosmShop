@@ -80,8 +80,14 @@ $(function() {
   });
 
   // Click somewhere inside category navigation
-  $('.categories').on('click', function(event) {
-    console.log($(event.target));
+  $('.categories li a').on('click', function(event) {
+
+    if ($(event.target).closest('.categories').hasClass('opened')) {
+      console.log($(event.target));
+    } else {
+      $('.categories').addClass('opened');
+      $(event.target).closest('a').addClass('selected');
+    }
   });
 
   // Hide navigation
