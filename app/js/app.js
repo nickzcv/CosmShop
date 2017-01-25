@@ -1,10 +1,11 @@
 var app = app || {};
 
 $(function() {
-  // -----
-  // Base
-  // -----
-  // Mobile navigation handler (hamburger)
+
+  /*
+   * Mobile navigation handler (hamburger)
+   *
+   */
   $('.hamburger').on('click', function() {
     // hide cart if opened
     $('.cart-popup').hide();
@@ -12,7 +13,10 @@ $(function() {
     $('.navigation').toggleClass('hidden');
   });
 
-  // Drop-down navigation handler
+  /*
+   * Drop-down navigation handler
+   *
+   */
   var timer;
   $('.sub-nav-trigger').on({
     mouseenter: function(){
@@ -36,7 +40,10 @@ $(function() {
     $(this).fadeOut();
   });
 
-  // Cart popup handler
+  /*
+   * Cart popup handler
+   *
+   */
   $('.cart').on({
     mouseenter: function(){
       var self = this;
@@ -59,9 +66,10 @@ $(function() {
     $(this).fadeOut();
   });
 
-  // -----
-  // Shop
-  // -----
+  /*
+  * Shop category navigation handlers
+  *
+  */
   $('.mobile-arrow').on('click', function() {
     var parentNode = $(this).parent();
     if (parentNode.hasClass('opened')) {
@@ -70,7 +78,13 @@ $(function() {
       parentNode.addClass('opened');
     }
   });
-  // Hide the menus.
+
+  // Click somewhere inside category navigation
+  $('.categories').on('click', function(event) {
+    console.log($(event.target));
+  });
+
+  // Hide navigation
   $(document).on('click', function(event) {
     if (!$(event.target).closest('.categories').length) {
       $('.categories').removeClass('opened');
