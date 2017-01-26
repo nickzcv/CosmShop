@@ -70,7 +70,7 @@ $(function() {
   * Shop category navigation handlers
   *
   */
-  $('.mobile-arrow').on('click', function() {
+  $('.mobile-arrow').on('touchstart', function() {
     var parentNode = $(this).parent();
     if (parentNode.hasClass('opened')) {
       parentNode.removeClass('opened');
@@ -80,18 +80,25 @@ $(function() {
   });
 
   // Click somewhere inside category navigation
-  $('.categories li a').on('click', function(event) {
+  $('.categories li a').on('touchstart', function(event) {
+    event.preventDefault();
 
     if ($(event.target).closest('.categories').hasClass('opened')) {
       console.log($(event.target));
+      selectItem(event.target);
     } else {
       $('.categories').addClass('opened');
-      $(event.target).closest('a').addClass('selected');
+      selectItem(event.target);
     }
   });
 
+  // Select item handler
+  function selectItem(target){
+    $(target).closest('a').addClass('selected');
+  }
+
   // Hide navigation
-  $(document).on('click', function(event) {
+  $(document).on('touchstart', function(event) {
     if (!$(event.target).closest('.categories').length) {
       $('.categories').removeClass('opened');
     }
