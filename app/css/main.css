@@ -95,8 +95,7 @@ header .cart-popup {
   header .cart {
     font-size: 26px;
     top: 15px;
-    right: 13%;
-    padding: 10px; }
+    right: 13%; }
   header .cart-popup {
     z-index: 1001;
     cursor: default;
