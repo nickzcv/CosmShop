@@ -72,6 +72,7 @@ $(function() {
   */
   $('.mobile-arrow').on('touchstart', function() {
     var parentNode = $(this).parent();
+
     if (parentNode.hasClass('opened')) {
       parentNode.removeClass('opened');
     } else {
@@ -79,12 +80,16 @@ $(function() {
     }
   });
 
-  // Click somewhere inside category navigation
-  $('.categories li a').on('touchstart', function(event) {
+  // Touch somewhere inside category navigation
+  $('.categories li').on('touchstart', function(event) {
     event.preventDefault();
-
+    // if touched arrow - do nothing
+    if ($(event.target).closest('li').hasClass('mobile-arrow')) {
+      return;
+    }
+    // if nav already was opened
     if ($(event.target).closest('.categories').hasClass('opened')) {
-      console.log($(event.target));
+      // TODO: check if we have cheld section
       selectItem(event.target);
     } else {
       $('.categories').addClass('opened');
@@ -94,13 +99,23 @@ $(function() {
 
   // Select item handler
   function selectItem(target){
-    $(target).closest('a').addClass('selected');
+    var $currentItem =  $(target).closest('a');
+    // if element already was selected
+    // then open current link
+    if ($currentItem.hasClass('selected')) {
+      location.href = $currentItem.attr('href');
+      return;
+    }
+    $currentItem.addClass('selected');
+    // Clear other selections
+    $currentItem.parent().siblings().find('a').removeClass('selected');
   }
 
-  // Hide navigation
+  // Hide navigation when touch somewhere outside navigation
   $(document).on('touchstart', function(event) {
     if (!$(event.target).closest('.categories').length) {
       $('.categories').removeClass('opened');
+      $('.categories li a').removeClass('selected');
     }
   });
 
